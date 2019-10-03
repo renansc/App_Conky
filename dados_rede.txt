@@ -1,0 +1,3 @@
+ipLocal: 192.168.0.111
+endMac: fe80::5549:5d3a:d3e7:7da
+ipExterno: 177.154.250.19
