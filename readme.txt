@@ -1,0 +1,1 @@
+conky configurado no lubuntu
