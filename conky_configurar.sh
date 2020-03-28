@@ -1,8 +1,8 @@
 #!/bin/bash
 #busca no arquivo os dados salvos.
-ipExternoAtual=`cat ~/conky_renan/dados_rede.txt |grep "ipExterno: "|cut -c14-25`
-ipLocalAtual=`cat ~/conky_renan/dados_rede.txt |grep "ipLocal: " |cut -c10-22`
-endMacAtual=`cat ~/conky_renan/dados_rede.txt |grep "endMac: " |cut -c9-32`
+ipExternoAtual=`cat ~/github/App_Conky/dados_rede.txt |grep "ipExterno: "|cut -c14-25`
+ipLocalAtual=`cat ~/github/App_Conky/dados_rede.txt |grep "ipLocal: " |cut -c10-22`
+endMacAtual=`cat ~/github/App_Conky/dados_rede.txt |grep "endMac: " |cut -c9-32`
 #busca dados atualizados
 ipLocalNovo=`ifconfig | grep "inet 192.168" |cut -c14-26`
 endMacNovo=`ifconfig | grep "inet6 f" |cut -c15-38`
@@ -57,6 +57,6 @@ else
 		ipExterno=$ipExternoNovo;
 	fi
 fi
-echo "ipLocal: "$ipLocal > ~/conky_renan/dados_rede.txt;
-echo "endMac: "$endMac >> ~/conky_renan/dados_rede.txt;
-echo "ipExterno: "$ipExterno >> ~/conky_renan/dados_rede.txt;
+echo "ipLocal: "$ipLocal > ~/github/App_Conky/dados_rede.txt;
+echo "endMac: "$endMac >> ~/github/App_Conky/dados_rede.txt;
+echo "ipExterno: "$ipExterno >> ~/github/App_Conky/dados_rede.txt;
