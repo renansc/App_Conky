@@ -34,7 +34,7 @@ settings_table = {
     },
     {
         name='downspeedf',
-        arg='ens33',
+        arg='enp2s0',
         max=210,
         bg_colour=0x33aaff,
         bg_alpha=0.2,
@@ -48,7 +48,7 @@ settings_table = {
     },
         {
         name='upspeedf',
-        arg='ens33',
+        arg='enp2s0',
         max=100,
         bg_colour=0x33aaff,
         bg_alpha=0.2,
@@ -77,7 +77,7 @@ settings_table = {
     },
         {
         name='downspeedf',
-        arg='wlp1s0',
+        arg='wlp3s0',
         max=210,
         bg_colour=0x33aaff,
         bg_alpha=0.2,
@@ -91,7 +91,7 @@ settings_table = {
     },
         {
         name='upspeedf',
-        arg='wlp1s0',
+        arg='wlp3s0',
         max=100,
         bg_colour=0x33aaff,
         bg_alpha=0.2,

@@ -1,5 +1,5 @@
 # Conky settings #
-background yes
+background no
 update_interval 1
 
 cpu_avg_samples 2
@@ -24,8 +24,8 @@ own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
 border_inner_margin 0
 border_outer_margin 0
 
-minimum_size 250
-maximum_width 500
+minimum_size 200
+maximum_width 300
 
 
 alignment tr
@@ -70,11 +70,11 @@ ${color 999999}${goto 125}${memperc}%
 ${color 999999}${goto 125}${voffset 55}DISK
 ${color 999999}${goto 125}${fs_used_perc /}%
 ${color 999999}${goto 125}${voffset 50}CABO
-${color 999999}${goto 125}${downspeed ens33}
-${color 999999}${goto 125}${upspeed ens33}
+${color 999999}${goto 125}${downspeed enp2s0}
+${color 999999}${goto 125}${upspeed enp2s0}
 ${color 999999}${goto 130}${voffset 45}WiFi
-${color 999999}${goto 130}${downspeed wlp1s0}
-${color 999999}${goto 130}${upspeed wlp1s0}
+${color 999999}${goto 130}${downspeed wlp3s0}
+${color 999999}${goto 130}${upspeed wlp3s0}
 ${color 999999}Info de Midia$hr${execi 1 /bin/bash ~/github/App_Conky/conky_audacious.sh}
 ${color white}${font Neuropolitical:size=7}${color 999999}${execi 1  cat ~/github/App_Conky/info_audacious.txt}
 Info de Rede$hr
