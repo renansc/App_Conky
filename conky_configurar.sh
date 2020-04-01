@@ -15,29 +15,29 @@ echo "end mac-$endMacNovo-${#endMacNovo}";
 if [ "$ipLocalAtual" = "$ipLocalNovo" ]
 then
 	echo "iplocal não mudou $ipLocalAtual";
-	echo "ipLocal: "$ipLocalAtual > ~/conky_renan/dados_rede.txt;
+	echo "ipLocal: "$ipLocalAtual > ~/github/App_Conky/dados_rede.txt;
 	ipLocal=$ipLocalAtual;
 else
 	echo "ip local diferente $ipLocalNovo";
-	echo "ipLocal: "$ipLocalNovo > ~/conky_renan/dados_rede.txt;
+	echo "ipLocal: "$ipLocalNovo > ~/github/App_Conky/dados_rede.txt;
  	ipLocal=$ipLocalNovo;
 fi
 #confere endereço mac
 if [ "$endMacAtual" = "$endMacNovo" ]
 then
 	echo "endereço mac não mudou $endMacAtual";
-	echo "endMac: $endMacAtual" >> ~/conky_renan/dados_rede.txt;
+	echo "endMac: $endMacAtual" >> ~/github/App_Conky/dados_rede.txt;
 	endMac=$endMacAtual;
 	echo "variavel $dados_rede";
 
 else
 	echo "endereço mac diferente $endMacNovo";
-	echo "endMac: $endMacNovo" >> ~/conky_renan/dados_rede.txt;
+	echo "endMac: $endMacNovo" >> ~/github/App_Conky/dados_rede.txt;
 	endMac=$endMacNovo;
 	echo "variavel: $dados_rede";
 fi
 #escreve dados ja atualizados]
-echo "ipExterno: (buscando)" >> ~/conky_renan/dados_rede.txt;
+echo "ipExterno: (buscando)" >> ~/github/App_Conky/dados_rede.txt;
 #busca ip externo
 ipExternoNovo=`curl "ifconfig.me"`
 #verifica ip externo

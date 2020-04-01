@@ -1,3 +1,5 @@
+#INSTALANDO DEPENDENCIAS
+	necessario pacotes conky / conky-all / curl
 #ARQUIVO clock rings.lua
 	arquivo com as configurações em linguagem lua
 #ARQUIVO configurar
