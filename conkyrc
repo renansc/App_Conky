@@ -1,3 +1,4 @@
+
 # Conky settings #
 background no
 update_interval 1
@@ -73,8 +74,8 @@ ${color 00FF99}${goto 125}${voffset 50}CABO
 ${color 00FF99}${goto 125}${downspeed enp2s0}
 ${color 00FF99}${goto 125}${upspeed enp2s0}
 ${color 00FF99}${goto 130}${voffset 45}WiFi
-${color 00FF99}${goto 130}${downspeed wlp3s0}
-${color 00FF99}${goto 130}${upspeed wlp3s0}
+${color 00FF99}${goto 130}${downspeed wlxd06f4a83d66f}
+${color 00FF99}${goto 130}${upspeed wlxd06f4a83d66f}
 ${color 00FF99}Info de Midia$hr${execi 1 /bin/bash ~/github/App_Conky/conky_audacious.sh}
 ${color 00FF99}${font Neuropolitical:size=7}${color 00FF99}${execi 1  cat ~/github/App_Conky/info_audacious.txt}
 Info de Rede$hr
