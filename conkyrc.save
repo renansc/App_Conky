@@ -1,0 +1,84 @@
+# Conky settings #
+background no
+update_interval 1
+
+cpu_avg_samples 2
+net_avg_samples 2
+
+override_utf8_locale yes
+
+double_buffer yes
+no_buffers yes
+
+text_buffer_size 2048
+#imlib_cache_size 0
+
+temperature_unit fahrenheit
+
+# Window specifications #
+
+own_window yes
+own_window_transparent yes
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
+
+border_inner_margin 0
+border_outer_margin 0
+
+minimum_size 200
+maximum_width 300
+
+
+alignment tr
+gap_x 5
+gap_y 5
+
+# Graphics settings #
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+# Text settings #
+use_xft yes
+override_utf8_locale yes
+xftfont Neuropolitical:size=8
+xftalpha 0.8
+uppercase no
+
+temperature_unit celsius
+
+default_color 00FF99
+
+# Lua Load  #
+lua_load ~/github/App_Conky/clock_rings.lua
+lua_draw_hook_pre clock_rings
+
+TEXT
+${image ~/Imagens/renan.jpg -p 130,10 -s 80x80}
+${font Neuropolitical:size=42}${time %e}
+${goto 100}${font Neuropolitical:size=18}${color 00FF99}${voffset -75}${time %b}
+${font Neuropolitical:size=10}${color 00FF99}${voffset 15}${time %A}${color 00FF99}${hr}${goto 100}${font Neuropolitical:size=15}${color 00FF99}${voffset -35}${time %Y}
+${font Neuropolitical:size=30}${voffset 30}${alignr}${time %H}:${time %M}:${time %S}
+${font Neuropolitical:size=11}${color 00FF99}${alignc}${execi 1 cat /etc/os-release |grep PRETTY_NAME |cut -c14-29}${font}${color 00FF99}
+EmUso(Tempo): ${uptime_short}
+${color 00FF99}${font Neuropolitical:size=8}Processos: ${processes}
+${color 00FF99}${font Neuropolitical:size=8}Executando: ${running_processes}
+${color 00FF99}${goto 125}${voffset 55}CPU
+${color 00FF99}${goto 125}${cpu cpu0}%
+${color 00FF99}${goto 125}${voffset 50}RAM
+${color 00FF99}${goto 125}${memperc}%
+${color 00FF99}${goto 125}${voffset 55}DISK
+${color 00FF99}${goto 125}${fs_used_perc /}%
+${color 00FF99}${goto 125}${voffset 50}CABO
+${color 00FF99}${goto 125}${downspeed enp2s0}
+${color 00FF99}${goto 125}${upspeed enp2s0}
+${color 00FF99}${goto 130}${voffset 45}WiFi
+${color 00FF99}${goto 130}${downspeed wlxd06f4a83d66f}
+${color 00FF99}${goto 130}${upspeedwlxd06f4a83d66f wlp3s0}
+${color 00FF99}Info de Midia$hr${execi 1 /bin/bash ~/github/App_Conky/conky_audacious.sh}
+${color 00FF99}${font Neuropolitical:size=7}${color 00FF99}${execi 1  cat ~/github/App_Conky/info_audacious.txt}
+Info de Rede$hr
+${color 00FF99}1-${execi 1 cat ~/github/App_Conky/dados_rede.txt|grep ipLocal}
+2-${execi 1  cat ~/github/App_Conky/dados_rede.txt|grep endMac}
+3-${execi 1  cat ~/github/App_Conky/dados_rede.txt|grep ipExterno}
+$hr
