@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-ipLocal: 192.168.0.102
-endMac: fe80::8d71:e9b0:efcf:1aa
-=======
-ipLocal: 192.168.0.103
-endMac: fe80::72e3:bfd2:64ee:ef9
->>>>>>> e5b418ace94d723ec05a74c8293971fab4b2de1e
-ipExterno: 177.36.83.92
+ipLocal: 
+endMac: 
+ipExterno: Sem Internet
