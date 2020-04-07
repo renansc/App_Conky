@@ -34,7 +34,7 @@ settings_table = {
     },
     {
         name='downspeedf',
-        arg='enp1s13',
+        arg='eth0',
         max=210,
         bg_colour=0xffffff,
         bg_alpha=0.2,
@@ -48,7 +48,7 @@ settings_table = {
     },
         {
         name='upspeedf',
-        arg='enp1s13',
+        arg='eth0',
         max=100,
         bg_colour=0xffffff,
         bg_alpha=0.2,
@@ -77,7 +77,7 @@ settings_table = {
     },
         {
         name='downspeedf',
-        arg='wlxd06f4a83d66f',
+        arg='wlan0',
         max=210,
         bg_colour=0xffffff,
         bg_alpha=0.2,
@@ -91,7 +91,7 @@ settings_table = {
     },
         {
         name='upspeedf',
-        arg='wlxd06f4a83d66f',
+        arg='wlan0',
         max=100,
         bg_colour=0xffffff,
         bg_alpha=0.2,
