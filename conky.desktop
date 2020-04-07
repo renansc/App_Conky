@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=~/github/App_Conky/conky_iniciar.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[pt_BR]=conky
+Name=conky
+Comment[pt_BR]=
+Comment=

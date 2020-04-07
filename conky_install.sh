@@ -1,6 +1,7 @@
 #!/bin/bash
 #busca no arquivo os dados salvos.
-cp grub.txt /etc/default/grub;
-update-grub;
+sudo mv grub.txt /etc/default/grub;
+sudo update-grub;
+mv conky.desktop ~/.config/autostart/conky.desktop
 #sudo reboot
 
