@@ -1,4 +1,3 @@
-
 # Conky settings #
 background no
 update_interval 1
@@ -19,10 +18,7 @@ temperature_unit fahrenheit
 # Window specifications #
 
 own_window yes
-own_window_transparent no
-own_window_argb_visual yes
-own_window_argb_value 100
-own_window_colour 000066
+own_window_transparent yes
 own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
 
 border_inner_margin 0
@@ -51,44 +47,15 @@ uppercase no
 
 temperature_unit celsius
 
-<<<<<<< HEAD
-default_color 000000
-=======
 default_color 00FF99
->>>>>>> e5b418ace94d723ec05a74c8293971fab4b2de1e
 
 # Lua Load  #
 lua_load ~/github/App_Conky/clock_rings.lua
 lua_draw_hook_pre clock_rings
 
 TEXT
-${alignr}${image ~/Imagens/renan.png -p 230,15 -s 80x80}
+${image ~/Imagens/renan.jpg -p 130,10 -s 80x80}
 ${font Neuropolitical:size=42}${time %e}
-<<<<<<< HEAD
-${goto 100}${font Neuropolitical:size=18}${color 000000}${voffset -75}${time %b}
-${font Neuropolitical:size=10}${color 000000}${voffset 15}${time %A}${color 000000}${hr}${goto 100}${font Neuropolitical:size=15}${color 000000}${voffset -35}${time %Y}
-${font Neuropolitical:size=30}${voffset 30}${alignc}${time %H}:${time %M}:${time %S}
-${font Neuropolitical:size=11}${color 000000}${alignc}${execi 1 cat /etc/os-release |grep PRETTY_NAME |cut -c14-29}${font}${color 000000}
-EmUso(Tempo): ${uptime_short}
-${color 000000}${font Neuropolitical:size=8}Processos: ${processes}
-${color 000000}${font Neuropolitical:size=8}Executando: ${running_processes}
-${color 000000}${goto 125}${voffset 55}CPU
-${color 000000}${goto 125}${cpu cpu0}%
-${color 000000}${goto 125}${voffset 50}RAM
-${color 000000}${goto 125}${memperc}%
-${color 000000}${goto 125}${voffset 55}DISK
-${color 000000}${goto 125}${fs_used_perc /}%
-${color 000000}${goto 125}${voffset 50}CABO
-${color 000000}${goto 125}${downspeed enp2s0}
-${color 000000}${goto 125}${upspeed enp2s0}
-${color 000000}${goto 130}${voffset 45}WiFi
-${color 000000}${goto 130}${downspeed wlp3s0}
-${color 000000}${goto 130}${upspeed wlp3s0}
-${color 000000}Info de Midia$hr${execi 1 /bin/bash ~/github/App_Conky/conky_audacious.sh}
-${color white}${font Neuropolitical:size=7}${color 000000}${execi 1  cat ~/github/App_Conky/info_audacious.txt}
-Info de Rede$hr{execi 1 /bin/bash ~/github/App_Conky/conky_configurar.sh}
-${color 000000}1-${execi 1 cat ~/github/App_Conky/dados_rede.txt|grep ipLocal}
-=======
 ${goto 100}${font Neuropolitical:size=18}${color 00FF99}${voffset -75}${time %b}
 ${font Neuropolitical:size=10}${color 00FF99}${voffset 15}${time %A}${color 00FF99}${hr}${goto 100}${font Neuropolitical:size=15}${color 00FF99}${voffset -35}${time %Y}
 ${font Neuropolitical:size=30}${voffset 30}${alignr}${time %H}:${time %M}:${time %S}
@@ -107,12 +74,11 @@ ${color 00FF99}${goto 125}${downspeed enp2s0}
 ${color 00FF99}${goto 125}${upspeed enp2s0}
 ${color 00FF99}${goto 130}${voffset 45}WiFi
 ${color 00FF99}${goto 130}${downspeed wlxd06f4a83d66f}
-${color 00FF99}${goto 130}${upspeed wlxd06f4a83d66f}
+${color 00FF99}${goto 130}${upspeedwlxd06f4a83d66f wlp3s0}
 ${color 00FF99}Info de Midia$hr${execi 1 /bin/bash ~/github/App_Conky/conky_audacious.sh}
 ${color 00FF99}${font Neuropolitical:size=7}${color 00FF99}${execi 1  cat ~/github/App_Conky/info_audacious.txt}
 Info de Rede$hr
 ${color 00FF99}1-${execi 1 cat ~/github/App_Conky/dados_rede.txt|grep ipLocal}
->>>>>>> e5b418ace94d723ec05a74c8293971fab4b2de1e
 2-${execi 1  cat ~/github/App_Conky/dados_rede.txt|grep endMac}
 3-${execi 1  cat ~/github/App_Conky/dados_rede.txt|grep ipExterno}
 $hr
