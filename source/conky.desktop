@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=~/github/App_Conky/conky_iniciar.sh
+Exec=~/github/App_Conky/functions/conky_iniciar.sh
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
