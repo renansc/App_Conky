@@ -1,4 +1,4 @@
-#INSTALANDO DEPENDENCIAS
+INSTALANDO DEPENDENCIAS
 ---
 * PACOTES NECESSÁRIOS `sudo apt install conky && apt install conky-all && apt install curl`
 O que outras pessoas estão dizendo
