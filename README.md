@@ -24,6 +24,6 @@
 
 METAS
 ---
--[]instalar o conky junto na aplicação,
+-[]instalar o conky junto na aplicação
 -[x]  adicionar esplicações no arquivo readme  
 -[]renomear config para configuration
