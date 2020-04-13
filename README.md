@@ -22,7 +22,7 @@
 1. no debian e "quiet splash" no ubuntu inserir antes do quiet net.ifnames=0"
 1. atualizar grub com update-grub depois reiniciar a máquina
 
-##METAS
+METAS
 ---
 -[]instalar o conky junto na aplicação,
 -[x]  adicionar esplicações no arquivo readme  
