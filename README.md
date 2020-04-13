@@ -1,5 +1,7 @@
 #INSTALANDO DEPENDENCIAS
-	necessario pacotes conky / conky-all / curl
+---
+* PACOTES NECESSÁRIOS `sudo apt install conky && apt install conky-all && apt install curl`
+O que outras pessoas estão dizendo
 #ARQUIVO clock rings.lua
 	arquivo com as configurações em linguagem lua 
 #ARQUIVO configurar
